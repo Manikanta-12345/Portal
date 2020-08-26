@@ -20,7 +20,7 @@ public class EmployeeServiceTest {
 	private EmployeeService service;
 	
 	@Test
-	public void getEmpTest() {
+	public void getEmp1Test() {
 		Employee emp=new Employee("EMP001", "raja", 60000d);
 		doReturn(emp).when(service).getEmployeeFromMap(anyString());
 		Employee employee = service.getEmployeeById("EMP001");
